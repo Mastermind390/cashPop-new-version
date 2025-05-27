@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+@theme {
+    --color-primary: #7833A6;
+    --color-secondary : #2D1859;
+    --color-blueish: #001F3F;
+    --color-reddish: #F23D91;
+    --color-background-color: #F9FAFB;
+    --bg-body: #F9FAFB;
+    --font-hero: "Permanent Marker", sans-serif;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --primary: #2C89FF;
+  --secondary : #2C89FF;
+  --blue: #001F3F;
+  --color-bg-color: #F9FAFB;
+  --bg-body: #F9FAFB;
+}
+
