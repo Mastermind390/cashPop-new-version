@@ -6,6 +6,7 @@ import Login from './pages/Login';
 import ForgotPassword from './pages/forgotPassword';
 import FaqPage from './pages/faqPage';
 import AvailableTaskPage from './pages/AvailabeTaskPage';
+import TaskHistoryPage from './pages/TaskHistoryPage';
 
 function App() {
   const router = createBrowserRouter(
@@ -17,6 +18,7 @@ function App() {
         <Route path='/reset-password' element={ <ForgotPassword /> } />
         <Route path='/faq' element={ <FaqPage /> } />
         <Route path='/available-tasks' element={ <AvailableTaskPage /> } />
+        <Route path='/tasks-history' element={ <TaskHistoryPage /> } />
           
           {/* <Route path='*' element={ <NotFoundPage /> } /> */}
       </Route>
