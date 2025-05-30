@@ -10,6 +10,7 @@ import TaskHistoryPage from './pages/TaskHistoryPage';
 import CreateTaskPage from './pages/CreateTaskPage';
 import TaskReviewPage from './pages/TaskReviewPage';
 import UserTaskListPage from './pages/UserTaskListPage';
+import EditTaskPage from './pages/EditTaskPage';
 
 function App() {
   const router = createBrowserRouter(
@@ -25,6 +26,7 @@ function App() {
         <Route path='/create-task' element={ <CreateTaskPage /> } />
         <Route path='/review-task' element={ <TaskReviewPage /> } />
         <Route path='/your-tasks' element={ <UserTaskListPage /> } />
+        <Route path='/edit-task' element={ <EditTaskPage /> } />
           
           {/* <Route path='*' element={ <NotFoundPage /> } /> */}
       </Route>

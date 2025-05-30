@@ -1,14 +1,9 @@
-import PageHeader from '../components/PageHeader';
-import Navigation from '../components/Navigation';
 
-const CreateTaskPage = () => {
+
+const EditTaskPage = () => {
   return (
     <>
-      <section>
-        <PageHeader title={"Create Task"} description={"let people help you achieve your goal"}/>
-      </section>
-
-      <section className='p-7 bg-purple-200 mb-20 lg:px-40 md:p-30'>
+       <section className='p-7 bg-purple-200 mb-20 lg:px-40 md:p-30'>
         <form action="" method="post" className='bg-white p-8 lg:px-30'>
           <select name="" id="" className='bg-purple-100 w-full h-15 p-3 mb-4'>
             <option value="">Social Media</option>
@@ -45,10 +40,8 @@ const CreateTaskPage = () => {
           
         </form>
       </section>
-      
-      <Navigation />
     </>
   )
 }
 
-export default CreateTaskPage
+export default EditTaskPage
