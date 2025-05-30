@@ -6,7 +6,7 @@ import Footer from '../../components/homepage/Footer'
 
 const MainLayouts = () => {
   const location = useLocation();
-  const hideFooterRoutes = ['/available-tasks', '/tasks-history'];
+  const hideFooterRoutes = ['/available-tasks', '/tasks-history', '/create-task', '/review-task'] ;
   const shouldHideFooter = hideFooterRoutes.includes(location.pathname);
 
   return (

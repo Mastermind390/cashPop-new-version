@@ -7,6 +7,8 @@ import ForgotPassword from './pages/forgotPassword';
 import FaqPage from './pages/faqPage';
 import AvailableTaskPage from './pages/AvailabeTaskPage';
 import TaskHistoryPage from './pages/TaskHistoryPage';
+import CreateTaskPage from './pages/CreateTaskPage';
+import TaskReviewPage from './pages/TaskReviewPage';
 
 function App() {
   const router = createBrowserRouter(
@@ -19,6 +21,8 @@ function App() {
         <Route path='/faq' element={ <FaqPage /> } />
         <Route path='/available-tasks' element={ <AvailableTaskPage /> } />
         <Route path='/tasks-history' element={ <TaskHistoryPage /> } />
+        <Route path='/create-task' element={ <CreateTaskPage /> } />
+        <Route path='/review-task' element={ <TaskReviewPage /> } />
           
           {/* <Route path='*' element={ <NotFoundPage /> } /> */}
       </Route>
