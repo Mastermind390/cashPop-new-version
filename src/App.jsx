@@ -12,6 +12,8 @@ import TaskReviewPage from './pages/TaskReviewPage';
 import UserTaskListPage from './pages/UserTaskListPage';
 import EditTaskPage from './pages/EditTaskPage';
 import Dashboard from './pages/Dashboard';
+import AccountDetailsPage from './pages/AccountDetailsPage'
+import WalletPage from './pages/WalletPage';
 
 function App() {
   const router = createBrowserRouter(
@@ -29,6 +31,8 @@ function App() {
         <Route path='/your-tasks' element={ <UserTaskListPage /> } />
         <Route path='/edit-task' element={ <EditTaskPage /> } />
         <Route path='/dashboard' element={ <Dashboard /> } />
+        <Route path='/account' element={ <AccountDetailsPage /> } />
+        <Route path='/wallet' element={ <WalletPage /> } />
           
           {/* <Route path='*' element={ <NotFoundPage /> } /> */}
       </Route>

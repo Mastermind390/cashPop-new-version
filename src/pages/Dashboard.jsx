@@ -7,6 +7,7 @@ import {DashboardCardNoNairaSign, DashboardCardWithNairaSign} from '../component
 import LockIcon from '../components/LockIcon';
 import RunningIcon from '../components/RunningIcon';
 import Navigation from '../components/Navigation';
+import EarnIcon from '../components/EarnIcon';
 
 const Dashboard = () => {
 
@@ -18,17 +19,20 @@ const Dashboard = () => {
             <div className="bg-white h-full overflow-y-scroll p-4 lg:p-10 md:px-7">
                
                 <div>
-                    <DashboardCardWithNairaSign icon={(<BagOfMoney />)} description={"Total Earned"} amount={"10,000"} />
 
-                    <DashboardCardWithNairaSign icon={(<WalletIcon />)} description={"Wallet Balance"} amount={"5,000"} />
+                  <DashboardCardWithNairaSign icon={(<WalletIcon />)} description={"Wallet Balance"} amount={"5,000"} />
 
-                    <DashboardCardWithNairaSign icon={(<LockIcon />)} description={"Locked Balance"} amount={"2,000"} />
+                  <DashboardCardWithNairaSign icon={(<EarnIcon />)} description={"Task Earnings"} amount={"500"} />
 
-                    <DashboardCardNoNairaSign icon={(<CompletedIcon />)} description={"Total Task Completed"} amount={"20"} />
+                  <DashboardCardWithNairaSign icon={(<BagOfMoney />)} description={"Total Earned"} amount={"10,000"} />
 
-                    <DashboardCardNoNairaSign icon={(<TaskCreatedIcon />)} description={"Total Task Created"} amount={"30"} />
+                  <DashboardCardWithNairaSign icon={(<LockIcon />)} description={"Locked Balance"} amount={"2,000"} />
 
-                    <DashboardCardNoNairaSign icon={(<RunningIcon />)} description={"Your Active Tasks"} amount={"3"} />
+                  <DashboardCardNoNairaSign icon={(<CompletedIcon />)} description={"Total Task Completed"} amount={"20"} />
+
+                  <DashboardCardNoNairaSign icon={(<TaskCreatedIcon />)} description={"Total Task Created"} amount={"30"} />
+
+                  <DashboardCardNoNairaSign icon={(<RunningIcon />)} description={"Your Active Tasks"} amount={"3"} />
                 </div>
             </div>
         </div>
