@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 
 const TaskJournal = ({title, status, date}) => {
   return (
@@ -9,7 +11,7 @@ const TaskJournal = ({title, status, date}) => {
                 <span className="italic" >{date} ago</span>
             </div>
             <div className="bg-primary px-5 py-3 flex justify-center items-center rounded-lg">
-                <a className="text-center text-white" href="">Edit</a>
+                <Link className="text-center text-white" to="/edit-task">Edit</Link>
             </div>
         </div>
     </>

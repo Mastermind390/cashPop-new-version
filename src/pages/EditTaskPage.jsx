@@ -1,4 +1,4 @@
-
+import Navigation from '../components/Navigation';
 
 const EditTaskPage = () => {
   return (
@@ -36,10 +36,12 @@ const EditTaskPage = () => {
           <input className="border-primary border-1 p-3 mt-2 w-full  rounded-lg focus:outline-none" type="text" placeholder='enter amount' value="0" />
          </div>
 
-         <button className='mt-5 text-center w-full bg-primary h-12 rounded-lg text-lg font-bold text-white cursor-pointer' type="submit">Create Task</button>
+         <button className='mt-5 text-center w-full bg-primary h-12 rounded-lg text-lg font-bold text-white cursor-pointer' type="submit">Update Task Info</button>
           
         </form>
       </section>
+
+      <Navigation />
     </>
   )
 }
