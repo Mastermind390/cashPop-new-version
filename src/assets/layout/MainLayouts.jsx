@@ -1,5 +1,5 @@
 import { Outlet, useLocation } from "react-router-dom";
-// import { ToastContainer } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 // import 'react-toastify/dist/ReactToastify.css';
 import Header from "../../components/header";
 import Footer from '../../components/homepage/Footer'
@@ -13,9 +13,9 @@ const MainLayouts = () => {
     <>
       <Header />
       <Outlet />
+      <ToastContainer />
       {/* <Footer /> */}
       {!shouldHideFooter && <Footer />}
-      {/* <ToastContainer /> */}
     </>
   )
 }
